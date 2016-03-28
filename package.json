@@ -1,6 +1,6 @@
 {
   "name": "restpack",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Library to pack/unpack data for restful API",
   "main": "./lib/restpack.js",
   "scripts": {
