@@ -29,6 +29,8 @@ restpack.setData({
   
 // we can send result directly if server is based on Koa
 restpack.sendKoa(this);
+// response: { tags: [ 'Apple', 'Orange' ] }
+
 ```
 
 If you are using browserify or webpack as build tool, you are able to use RestPack what is just like you do on server-side. 
@@ -63,6 +65,17 @@ restpack
   
 // we can send result directly if server is based on Koa
 restpack.sendKoa(this);
+/*
+  status code: 422
+  response: {
+    message: 'Validation Failed',
+    errors: [
+      { field: 'username', code: 4  },
+      { field: 'email', code: 2  },
+      { field: 'name', code: 1  }
+    ]
+  }
+*/
 ```
 
 You can use RestPack to get status and error messages by parsing data sent from server. 
